@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>お問い合わせフォーム</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="content/css/main.css">
+</head>
+<body>
+
+<h1>HTML5 フォームサンプル</h1>
+<form>
+<fieldset>
+お名前（必須）：<input type="text" name="yourname" autofocus required><br>
+メールアドレス：<input type="email" name="mail"><br>
+URL：<input type="url" name="website"><br>
+ご利用プラン：
+<input type="text" list="plan">
+<datalist id="plan">
+<option value="とくとくプラン">
+<option value="らくらくプラン">
+<option value="ぼちぼちプラン">
+<option value="そこそこプラン">
+</datalist><br>
+ご利用日：<input type="date" name="riyoubi"><br>
+ご利用人数<input type="number" name="ninzu" min="1" max="4">人<br>
+満足度（5段階）：
+<input type="range" name="manzoku" min="0" max="5" value="0"> 
+<output name="result" onforminput="value=manzoku.value"></output><br>
+<input type="submit" value="送信">
+</fieldset>
+</form>
+
+</body>
+</html>
