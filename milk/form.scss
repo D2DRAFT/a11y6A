@@ -1,0 +1,35 @@
+.form02 {
+  section {
+  }
+  dl {
+    width: auto;
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    background-color: #fafafa;
+    dt {
+      	float: left;
+      	clear: both;
+      	width: 13em;
+      	margin-top: 0;
+      margin-bottom: 0;
+      	margin-right: -13em;
+      margin-left: 0;
+      	padding: 0.3em;
+      	display: inline;
+      border-right: 1px solid #ccc;
+      }
+    dd {
+      	margin: 0;
+      	padding: 0.3em 0 0.3em 13em;
+      	border-bottom: 1px solid #ccc;
+      background-color: #fff;
+    }
+    &::after {
+      	height: 0;
+      	visibility: hidden;
+      	content: ".";
+      	display: block;
+      	clear: both;
+    }
+  }
+}

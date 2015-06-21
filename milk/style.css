@@ -1,0 +1,52 @@
+header .form01{
+	margin-top: 2.5em;
+}
+
+input[type="search"]#searchbox{
+	width: 20em;
+}
+.btn-search {
+  color: #fff;
+  background-color: #D33382;
+  padding: 0;
+  border-color: #D33382;
+  border: none;
+}
+.btn-search:focus,
+.btn-search.focus {
+  color: #fff;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-search:hover {
+  color: #fff;
+  background-color: #D33382;
+  border-color: #D33382;
+}
+.btn-search:focus,
+.btn-search.focus,
+.btn-search:hover{
+	filter: alpha(opacity=70);
+  	-moz-opacity: 0.7;
+  	opacity: 0.7;
+}
+.btn-search:active,
+.btn-search.active,
+.open > .dropdown-toggle.btn-search {
+  color: #fff;
+  background-color: #D33382;
+  border-color: #D33382;
+}
+.btn-search:active:hover,
+.btn-search.active:hover,
+.open > .dropdown-toggle.btn-search:hover,
+.btn-search:active:focus,
+.btn-search.active:focus,
+.open > .dropdown-toggle.btn-search:focus,
+.btn-search:active.focus,
+.btn-search.active.focus,
+.open > .dropdown-toggle.btn-search.focus {
+  color: #fff;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
