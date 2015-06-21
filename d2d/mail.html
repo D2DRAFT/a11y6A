@@ -6,32 +6,48 @@
 <meta name="description" content="">
 <meta name="author" content="">
 <meta name="viewport" content="width=device-width">
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" type="text/css" href="content/css/main.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<h1>HTML5 フォームサンプル</h1>
 <form>
-<fieldset>
-お名前（必須）：<input type="text" name="yourname" autofocus required><br>
-メールアドレス：<input type="email" name="mail"><br>
-URL：<input type="url" name="website"><br>
-ご利用プラン：
-<input type="text" list="plan">
-<datalist id="plan">
-<option value="とくとくプラン">
-<option value="らくらくプラン">
-<option value="ぼちぼちプラン">
-<option value="そこそこプラン">
-</datalist><br>
-ご利用日：<input type="date" name="riyoubi"><br>
-ご利用人数<input type="number" name="ninzu" min="1" max="4">人<br>
-満足度（5段階）：
-<input type="range" name="manzoku" min="0" max="5" value="0"> 
-<output name="result" onforminput="value=manzoku.value"></output><br>
-<input type="submit" value="送信">
-</fieldset>
+    <div class="form-group">
+        <label>
+            お名前<span class="mark">必須</span>
+            <input type="text" name="name" aria-required="true">
+        </label>
+    <div>
+    <div class="form-group">
+        <label>
+            メールアドレス<span class="mark">必須</span>
+            <input type="text" name="mail" aria-required="true">
+        </label>
+    <div>
+    <div class="form-group">
+        <label>
+            ご住所
+            <input type="text" name="address">
+        </label>
+    <div>
+    <div class="form-group">
+        <label>
+            電話番号
+            <input type="text" name="tel">
+        </label>
+    <div>
+    <div class="form-group">
+        <label>お問い合わせの種類</label>
+            <input type="radio" name="syurui" value="a" id="check_A"><label for="check_A">Aについて</label>
+            <input type="radio" name="syurui" value="b" id="check_B"><label for="check_B">Bについて</label>
+            <input type="radio" name="syurui" value="c" id="check_C"><label for="check_C">Cについて</label>
+        <div>
+    <div class="form-group">
+        <label>
+            お問い合わせ内容<span class="mark">必須</span>
+            <textarea class="form-control" rows="3" aria-required="true"></textarea>
+        </label>
+    <div>
 </form>
 
 </body>

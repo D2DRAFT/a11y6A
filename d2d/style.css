@@ -1,0 +1,39 @@
+h1{
+	font-size: 2em;
+	text-align: center;
+	border-bottom: 3px solid #000;
+	padding-bottom: 0.25em;
+}
+
+input{
+	
+}
+.submit{
+	color: #fff;
+	font-weight: normal;
+	padding: 0.5em;
+	background: #000;
+	border: none;
+	-webkit-border-radius: 0 5px 0 5px;
+	        border-radius: 0 5px 0 5px;
+}
+
+label{
+//	display: block;
+}
+.mark{
+	color: #fff;
+	background: #000;
+	margin-right: 0.5em;
+	padding: 3px;
+	-webkit-border-radius: 3px;
+	        border-radius: 3px;
+}
+
+@media only screen and (max-width: 767px) {
+
+	forms label {
+		display: inline-block;
+	}
+
+}
