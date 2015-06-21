@@ -33,9 +33,9 @@
                     <h2>住所</h2>
                 </header>
                 <dl>
-                    <dt><label for="yuubin">郵便番号</label></dt>
+                    <dt><label for="yuubin">郵便番号<span>※</span></label></dt>
                     <dd><input type="text" id="yuubin" title="郵便番号上3桁" aria-required="true">-<input type="text" title="郵便番号下4桁"></dd>
-                    <dt><label cor="todouhuken">都道府県</label></dt>
+                    <dt><label cor="todouhuken">都道府県<span>※</span></label></dt>
                     <dd>
                         <select id="todouhuken">
                             <option value="" selected>都道府県 
@@ -88,7 +88,7 @@
                             <option value="47">沖縄県 
                         </select>
                     </dd>
-                    <dt><label for="sicyouson">市区町村</label></dt>
+                    <dt><label for="sicyouson">市区町村<span>※</span></label></dt>
                     <dd><input type="text" id="sicyouson" aria-required="true"></dd>
                     <dt><label for="banchi">番地・マンション名</label></dt>
                     <dd><input type="text" id="banchi"></dd>
@@ -99,21 +99,21 @@
                     <h2>お名前・性別</h2>
                 </header>
                 <dl>
-                    <dt><label for="name">氏名</label></dt>
+                    <dt><label for="name">氏名<span>※</span></label></dt>
                     <dd>
                         <label for="lastname">姓<input type="text" id="lastname" aria-required="true" aria-describedby="name"></label>
                         <label for="firstname">名<input type="text" id="firstname" aria-required="true" aria-describedby="name"></label>
                     </dd>
                     <dt><label for="nameKana">氏名（ふりがな）</label></dt>
                     <dd>
-                        <label for="lastnameKana">姓<input type="text" id="lastnameKana" aria-required="true" aria-describedby="name-kana-desc"></label>
-                        <label for="firstnameKana">名<input type="text" id="firstnameKana" aria-required="true" aria-describedby="name-kana-desc"></label>
+                        <label for="lastnameKana">姓<input type="text" id="lastnameKana" aria-describedby="name-kana-desc"></label>
+                        <label for="firstnameKana">名<input type="text" id="firstnameKana" aria-describedby="name-kana-desc"></label>
                         <p id="name-kana-desc">ひらがなで入力してください。</p>
                     </dd>
-                    <dt id="sex">性別</dt>
+                    <dt id="sex">性別<span>※</span></dt>
                     <dd>
-                        <label for="male"><input type="radio" value="male" id="male" aria-describedby="sex">男性</label>
-                        <label for="female"><input type="radio" value="female" id="female" aria-describedby="sex">女性</label>
+                        <label for="male"><input type="radio" value="male" id="male" aria-describedby="sex" aria-required="true">男性</label>
+                        <label for="female"><input type="radio" value="female" id="female" aria-describedby="sex" aria-required="true">女性</label>
                     </dd>
                 </dl>
             </section>
@@ -122,15 +122,15 @@
                     <h2>連絡先</h2>
                 </header>
                 <dl>
-                    <dt><label for="telNum">電話番号</label></dt>
+                    <dt><label for="telNum">電話番号<span>※</span></label></dt>
                     <dd><input type="tel" id="telNum" title="市外局番">-<input type="tel" title="市内局番">-<input type="tel" title="加⼊者番号"></dd>
-                    <dt><label for="eMail">メールアドレス</label></dt>
+                    <dt><label for="eMail">メールアドレス<span>※</span></label></dt>
                     <dd>
                         <input type="text" id="eMail" aria-describedby="email-desc">
                         <p role="alert" aria-live="assertive" id="error_message" class="caution" tabindex="-1">メールアドレスは半角6文字以上で入力してください。</p>
                         <p id="email-desc">半角英数で入力してください。</p>
                     </dd>
-                    <dt><label for="eMailKakunin">メールアドレス（確認用）</label></dt>
+                    <dt><label for="eMailKakunin">メールアドレス（確認用）<span>※</span></label></dt>
                     <dd>
                         <input type="text" id="eMailKakunin" aria-describedby="email-kakunin-desc">
                         <p id="email-kakunin-desc">確認のため再度入力してください。</p>
